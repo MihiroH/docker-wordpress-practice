@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["dist", "node_modules", "tasks", "gulpfile.js"],
+  "rules": {
+    "array-bracket-spacing": ["error", "never"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "computed-property-spacing": ["error", "never"],
+    "indent": ["error", 2],
+    "key-spacing": ["error", { "mode": "strict" }],
+    "keyword-spacing": ["error"],
+    "max-len": ["error", {
+      "code": 80,
+      "ignoreTemplateLiterals": true,
+      "ignoreUrls": true
+    }],
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "no-redeclare": "error",
+    "no-unexpected-multiline": "error",
+    "no-unneeded-ternary": "error",
+    "no-unreachable": "error",
+    "no-var": "error",
+    "quote-props": ["error", "as-needed"],
+    "quotes": ["error", "single"],
+    "space-in-parens": ["error", "never"]
+  }
+}

@@ -1,0 +1,13 @@
+/* Top
+   ----------------------------------------------------------------- */
+@import "_global";
+
+.test {
+  @include sp {
+    font-size: vw(14px);
+    color: $color_black;
+  }
+  @include pc {
+    font-size: 28px;
+  }
+}
