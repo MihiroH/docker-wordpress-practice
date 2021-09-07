@@ -1,0 +1,5 @@
+{
+  "disallowAttributeConcatenation": true,
+  "disallowMultipleLineBreaks": true,
+  "validateIndentation": 2
+}

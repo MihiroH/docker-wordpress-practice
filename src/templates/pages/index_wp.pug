@@ -1,0 +1,21 @@
+extends /pages/_template
+
+block var
+  - fileName = 'index';
+
+block php
+  :php
+    // PHP
+    $test = 'hello world!!!';
+
+block link
+  link(rel="stylesheet" href=`${cssPath}/top.css`)
+
+block container
+  h1 <?php echo "heading"; ?>
+  p
+    :php
+      echo $test;
+
+block script
+  script(src=`${jsPath}/script.js`)
