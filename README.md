@@ -1,4 +1,4 @@
-# Docker WordPress Practice
+# Docker WordPress Template
 WordPressをDocker Composeで立ち上げる場合の雛形  
 
 ### 担当
