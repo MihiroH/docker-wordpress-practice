@@ -1,0 +1,39 @@
+/* Config
+   ----------------------------------------------------------------- */
+@use 'sass:math';
+
+// Path
+$img_path: "/assets/img";
+
+// Color
+$color_black: #333;
+$color_white: #fff;
+
+// Media
+$sp: 768px;
+$pc: $sp + 1px;
+
+@mixin sp {
+  @media only screen and (max-width: $sp) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media only screen and (min-width: $pc) {
+    @content;
+  }
+}
+
+// Utility
+@function vw($px, $windowSize: 375px) {
+  @return math.div($px, $windowSize) * 100vw;
+}
+
+@mixin opacity {
+  opacity: .7;
+}
+
+@mixin zoom {
+  transform: scale(1.1);
+}
